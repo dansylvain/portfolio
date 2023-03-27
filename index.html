@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3dd39fb56b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="jquery-ui.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#tabs").tabs();
+      });
+    </script>
+
+    <title>Dan SYLVAIN</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <i class="fa-solid fa-laptop-code logo"></i>
+      <a href="#video">Vidéo</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#infos">Plus d'infos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <!-- hero -->
+    <header class="hero container">
+      <h1>Dan SYLVAIN</h1>
+      <h3>Le développement web par alternance</h3>
+    </header>
+    <!-- video -->
+    <center class="container" id="video">
+      <iframe
+        width="420"
+        height="315"
+        src="https://www.youtube.com/embed/JijJXLGYOMs"
+      >
+      </iframe>
+    </center>
+
+    <!-- portfolio -->
+    
+    <h2>PORTFOLIO</h2>
+    <div class="parallax">
+
+    <section class="container wrapper" id="portfolio">
+      <div class="flip-card one">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="/assets/portfolio-1.png"
+              alt="Avatar"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Netlify</h1>
+            <p>Blog avec React</p>
+            <a href="https://alos35tambiensepuede.netlify.app/" target="_blank"
+              >link
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card two">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="/assets/portfolio-2.png"
+              alt="Avatar"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Github</h1>
+            <p>Exercice HTML / CSS</p>
+            <a
+              href="https://github.com/dansylvain/neurorehabilitarte"
+              target="_blank"
+              >Github</a
+            >
+            <span> | </span>
+            <a
+              href="https://dansylvain.github.io/neurorehabilitarte/"
+              target="_blank"
+              >link</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flip-card three">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="/assets/portfolio-3.png"
+              alt="Avatar"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Netlify</h1>
+            <p>Conversion Webflow > React</p>
+            <a href="https://test-webflow.netlify.app/" target="_blank">link</a>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card four">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="/assets/portfolio-4.png"
+              alt="Avatar"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Wordpress</h1>
+            <p>Blog de vacances</p>
+            <a href="http://destinationcompostelle.com/" target="_blank"
+              >link</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flip-card five">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="/assets/portfolio-5.png"
+              alt="Avatar"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Netlify</h1>
+            <p>Page web - React</p>
+            <a href="https://francaisavecdan.netlify.app/" target="_blank"
+              >link</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flip-card six">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="/assets/portfolio-6.png"
+              alt="Avatar"
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Github</h1>
+            <p>Exercice CSS</p>
+            <a
+              href="https://github.com/dansylvain/space-tourism-website-main"
+              target="_blank"
+              >Github</a
+            >
+            <span> | </span>
+            <a
+              href="https://dansylvain.github.io/space-tourism-website-main/"
+              target="_blank"
+              >link</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jQueryUI Tabs  -->
+    <section id="infos" class="bg-gray container">
+      <h2>EN SAVOIR PLUS SUR MOI</h2>
+      <div id="tabs" class="tabsContainer">
+        <ul>
+          <li><a href="#tabs-1">Mon projet professionnel</a></li>
+          <li><a href="#tabs-2">Mon parcours</a></li>
+          <p><a class="cvTab" href="/CV_Dan_Sylvain.pdf" target="_blank">CV ( pdf )</a></p>
+        </ul>
+        <div id="tabs-1">
+          <p>
+            Parce que je me suis rendu compte du plaisir que je prends à
+            programmer et à résoudre les problèmes que peuvent poser le code,
+            j'ai décidé d'en faire ma profession. Je me suis vite rendu compte
+            qu'il s'agit d'un marché en pleine expansion.
+          </p>
+          <br />
+          <p>
+            Même s'il est vrai que je pourrais apprendre rapidement en poste
+            pour combler toutes mes lacunes, car je n'ai aucune formation
+            technique dans l'informatique, je crois qu'il est beaucoup plus
+            facile de s'insérer sur le marché du travail avec une expérience
+            pratique telle qu'une alternance.
+          </p>
+          <br />
+          <p>
+            Mais quelle direction prendre? Il y a tellement de spécialisations
+            possibles, c'est difficile de dire dès le début de sa carrière où
+            l'activité nous mènera. Mais dans un premier temps, je souhaite me
+            concentrer sur le développement de page web, parce que c'est ce que
+            j'ai fait jusqu'ici en auto-formation. Quelques exemples de pages
+            que j'ai codées sont disponibles dans mon portfolio.
+          </p>
+          <br />
+          <p>
+            Intégrer une agence web pour apprendre les rudiments du métiers pour
+            un jour devenir indépendant? Je ne peux pas encore le dire, mais
+            c'est une première direction à prendre.
+          </p>
+        </div>
+        <div id="tabs-2">
+          <p>
+            S'il y a bien une chose qui me caractérise, c'est mon adaptabilité.
+            Je semble ne pas trouver de repos entre les différents pays où je me
+            suis installé, les diverses professions que j'ai pu exercer un peu
+            partout en Europe Occidentale. Et s'il est vrai que j'aime le
+            voyage, le fait est que je reste en place pendant des années une
+            fois que je trouve une situation qui me plait.
+          </p>
+          <br />
+          <p>
+            Le fait d'avoir vécu à l'étranger pendant des années m'a permis de
+            maîtriser les langues des pays où j'ai vécu. J'ai travaillé comme
+            professeur de langue particulier pendant des années, et je le ferai
+            encore si ce n'avait pas été pour la pandémie qui a quelque peu
+            changé les plans de beaucoup de gens.
+          </p>
+          <br />
+          <p>
+            J'ai eu la chance d'avoir vécu le confinement dans un logement
+            confortable où j'ai pu me dédier au code à temps plein. C'est à
+            cette période que j'ai appris la plupart des choses que je connais
+            maintenant. Si je n'ai pas essayer d'orienter mon activité
+            professionnelle en ce sens une fois la pandémie derrière nous, c'est
+            que je ne savais pas comment faire. Je revenais d'Espagne où j'avais
+            vécu pendant quatre ans, je n'avais pas le droit au chômage et il
+            fallait travailler immédiatement. Dans mon cas, je suis allé faire
+            de l'intérim dans les usines. Du travail, il y en a. Et beaucoup.
+          </p>
+          <br />
+          <p>
+            Mais mon plus gros souci a été le logement. Impossible d'en trouver!
+            Personne pour me faire confiance... Heureusement que mon père était
+            là pour m'accueillir. Mais, pour ne pas être un poids pour lui, je
+            me suis rapidement tourné vers le travail saisonnier. Suite à la
+            pandémie, beaucoup de travailleurs se sont reconvertis, et il y a un
+            manque énorme de personnel dans les stations de ski et bien d'autres
+            établissements touristiques de stations balnéaires (ou autre). Et
+            dans la plupart des cas, ces emplois sont nourri-logé. C'est donc
+            tout naturellement que j'ai commencé à travailler en tant que
+            saisonnier.
+          </p>
+          <br />
+          <p>
+            Maintenant, et suite à la perte de mon emploi en janvier, j'ai la
+            possibilité de prendre le temps et me reconvertir. L'État me donne
+            cette chance, alors à moi de la saisir!
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!-- contact-form/link CV -->
+    <section id="contact">
+      <!-- insérer ici un formulaire mailChimp! -->
+      <a
+        href="https://us2.list-manage.com/contact-form?u=ab0f5329b35e06cca8ce9ee02&form_id=37c07bddff945d78185ffed16b60436e"
+        target="popup"
+        onclick="window.open('https://us2.list-manage.com/contact-form?u=ab0f5329b35e06cca8ce9ee02&form_id=37c07bddff945d78185ffed16b60436e','popup','width=600,height=600'); return false;"
+      >
+        <h2 class="contactMe">Cliquez pour me contacter!</h2>
+      </a>
+    </section>
+    <!-- footer -->
+    <div class="container bg-gray footer">
+      <p class="debug">Dan SYLVAIN 2023.</p>
+      <a href="https://github.com/dansylvain" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/dan-sylvain-905066157" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/dan.sylvain.54" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.instagram.com/dansylvain84" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+      
+    </div>
+  </body>
+</html>
